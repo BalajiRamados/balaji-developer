@@ -1,6 +1,6 @@
 import React from "react";
 import config from "../config/config";
-import Home from "../Home";
+import Home from "./Home";
 import About from "../Components/About";
 import Contact from "../Components/Contact";
 import Projects from "./Projects";
