@@ -18,7 +18,7 @@ const Projects = () => {
         </div>
         <Row className="p-home-page-projects-row">
           <Col sm={12} lg={6}>
-            <div className="p-home-page-cards-container">
+            <div className="p-home-page-cards-container p-home-page-cards-container-odd">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={DataEngineerng} alt="" />
@@ -77,7 +77,7 @@ const Projects = () => {
         </Row>
         <Row className="p-home-page-projects-row">
           <Col sm={12} lg={6}>
-            <div className="p-home-page-cards-container">
+            <div className="p-home-page-cards-container p-home-page-cards-container-odd">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={OnlineLearning} alt="" />
@@ -165,7 +165,7 @@ const Projects = () => {
             </div>
           </Col>
           <Col sm={12} lg={6}>
-            <div className="p-home-page-cards-container" style={{ visibility: 'hidden' }}>
+            <div className="p-home-page-cards-container p-home-page-cards-container-hidden">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={DataEngineerng} alt="" />

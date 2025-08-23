@@ -52,45 +52,46 @@ const About = () => {
   return (
     <>
       <div className="p-home-page-content-container">
-        
-        <div>
+          <div>
             <div className="p-home-page-typewritter-container-static-text">
-                Hey! I'm Balaji
+                Hey! &nbsp;
+                <br className="p-home-page-name-mobile-section" />
+                I'm Balaji
             </div>
-        </div>
-        <div>
-            <div className="p-home-page-typewritter-container">
-                as a,
             </div>
-        </div>
-        <div className="">
-            <div className="p-home-page-typewritter-container">
-                <div id="typewriter">{displayText}</div>
+            <div>
+                <div className="p-home-page-typewritter-container">
+                    as a,
+                </div>
             </div>
-        </div>
-        <div className="p-home-page-image-con">
-            <div className="p-home-page-image-container">
-                <img src={Balaji} alt="" className="p-home-page-personal-image" />
+            <div className="">
+                <div className="p-home-page-typewritter-container">
+                    <div id="typewriter">{displayText}</div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div className="p-home-page-story-header-container">
-                Here’s My Story
+            <div className="p-home-page-image-con">
+                <div className="p-home-page-image-container">
+                    <img src={Balaji} alt="" className="p-home-page-personal-image" />
+                </div>
             </div>
-        </div>
-        <div>
-            <div className="p-home-page-story-container">
-                I’m Balaji — a Full Stack developer and cloud enthusiast
-                <br />
-                who loves building smart, user-friendly web apps and
-                <br />
-                data solutions. From front-end magic to back-end
-                <br />
-                logic (with a dash of AI), I enjoy turning ideas into real
-                <br />
-                impact. Always learning, always coding!
+            <div>
+                <div className="p-home-page-story-header-container">
+                    Here’s My Story
+                </div>
             </div>
-        </div>
+            <div>
+                <div className="p-home-page-story-container">
+                    I’m Balaji — a Full Stack developer and cloud enthusiast
+                    <br className="p-home-page-name-mobile-section-invert" />
+                    who loves building smart, user-friendly web apps and
+                    <br className="p-home-page-name-mobile-section-invert" />
+                    data solutions. From front-end magic to back-end
+                    <br className="p-home-page-name-mobile-section-invert" />
+                    logic (with a dash of AI), I enjoy turning ideas into real
+                    <br className="p-home-page-name-mobile-section-invert" />
+                    impact. Always learning, always coding!
+                </div>
+            </div>
         <div>
             <div className="p-home-page-story-header-container">
                 My Gallery

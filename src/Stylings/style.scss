@@ -427,3 +427,118 @@ body{
 }
 
 // Skills Finish
+
+.p-home-page-name-mobile-section{
+  display: none;
+}
+
+.p-home-page-name-mobile-section-invert{
+  display: block;
+}
+
+.ag-grid-mobile-version{
+  display: none;
+}
+
+.ag-grid-desktop-version{
+  display: block;
+}
+
+.p-home-page-cards-container-hidden{
+  visibility: hidden;
+}
+
+// Mobile Version
+
+@media screen and (max-width: 768px) {
+  // Navbar Mobile Optimization
+  .p-navbar-container {
+    font-size: 18px;
+  }
+  
+  .p-navbar-container .row {
+    align-items: center;
+  }
+  
+  .p-navbar-container .col:first-child {
+    flex: 0 0 auto;
+    max-width: fit-content;
+  }
+  
+  .p-navbar-container .col:last-child {
+    flex: 1;
+  }
+  
+  .p-navbar-links-row {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  
+  .p-navbar-links-container {
+    padding: 0.5em;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: nowrap;
+  }
+  
+  .p-navlink {
+    padding: 0.5em 0.7em;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  // Home page content
+  .p-home-page-name-mobile-section{
+    display: block;
+  }
+  .p-home-page-typewritter-container-static-text{
+    text-align: center;
+    font-size: 50px;
+  }
+  .p-home-page-typewritter-container{
+    font-size: 20px;
+  }
+  .p-home-page-name-mobile-section-invert{
+    display: none;
+  }
+  .p-home-page-story-container{
+    max-width: 100vw;
+    text-wrap: auto;
+    font-size: 16px;
+  }
+  .p-home-page-story-header-container{
+    font-size: 30px;
+  }
+  .ag-header{
+    font-size: 20px;
+  }
+  .ag-grid-mobile-version{
+    display: block;
+  }
+  .ag-grid-desktop-version{
+    display: none;
+  }
+  .p-home-page-cards-container-hidden{
+    display: none;
+  }
+  .p-home-page-cards-container-odd{
+    margin-bottom: 3em;
+  }
+}
+
+// Extra small mobile devices (phones, 576px and down)
+@media screen and (max-width: 576px) {
+  .p-navbar-container {
+    font-size: 16px;
+  }
+  
+  .p-navlink {
+    padding: 0.4em 0.6em;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+  
+  .p-navbar-links-container {
+    gap: 0.3em;
+  }
+}
