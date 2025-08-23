@@ -16,6 +16,7 @@
     "@coreui/coreui": "^5.4.1",
     "@coreui/react": "^5.7.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "ag-grid-react": "^34.1.1",
     "bootstrap": "^5.3.7",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",

@@ -9,16 +9,21 @@ import WordPress from "../assets/wordpress.jpg";
 
 const Projects = () => {
   return (
-    <div>
-      <div>
+    <>
+      <div className="p-home-page-content-container">
+        <div>
+            <div className="p-home-page-story-header-container p-home-page-projects-header-container">
+                Projects Handled
+            </div>
+        </div>
         <Row className="p-home-page-projects-row">
-          <Col>
+          <Col sm={12} lg={6}>
             <div className="p-home-page-cards-container">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={DataEngineerng} alt="" />
                 <h3 className="p-home-page-card-title">Managing and Transforming Large-Scale Pharmaceutical Data</h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>Secure Data Handling & Processing:</strong>Efficiently manage, extract, transform, and load (ETL/ELT) large
@@ -34,18 +39,18 @@ const Projects = () => {
                       for robust data storage, processing, and analytics.
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
-          <Col>
+          <Col sm={12} lg={6}>
             <div className="p-home-page-cards-container">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={CostManagement} alt="" />
                 <h3 className="p-home-page-card-title">Resource and Cost Management Web Application</h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>Efficient Resource Allocation:</strong> Track and manage resource distribution across multiple projects while
@@ -64,20 +69,20 @@ const Projects = () => {
                       frameworks for seamless development and deployment.
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
         </Row>
         <Row className="p-home-page-projects-row">
-          <Col>
+          <Col sm={12} lg={6}>
             <div className="p-home-page-cards-container">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={OnlineLearning} alt="" />
                 <h3 className="p-home-page-card-title">Online Learning Web Application</h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>Interactive Learning Experience: </strong> Deliver engaging and interactive courses with multimedia support,
@@ -92,18 +97,18 @@ const Projects = () => {
                       seamless development and deployment
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
-          <Col>
+          <Col sm={12} lg={6}>
             <div className="p-home-page-cards-container">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={AI} alt="" />
                 <h3 className="p-home-page-card-title">Proof of Concept (POC) on LLMs, Agents, and AI Models </h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>AI Integration:</strong>  Seamlessly incorporate Large Language Models (LLMs) into the existing web platform
@@ -126,20 +131,20 @@ const Projects = () => {
                       driven solutions.
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
         </Row>
         <Row className="p-home-page-projects-row">
-          <Col>
+          <Col sm={12} lg={6}>
             <div className="p-home-page-cards-container">
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={WordPress} alt="" />
                 <h3 className="p-home-page-card-title">WordPress Website Development </h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>Projects Delivered:</strong>  Successfully developed and deployed WordPress sites for StoryEQ, Todac360,
@@ -154,18 +159,18 @@ const Projects = () => {
                       and high-performing websites.
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
-          <Col>
-            <div className="p-home-page-cards-container" style={{ display: 'none' }}>
+          <Col sm={12} lg={6}>
+            <div className="p-home-page-cards-container" style={{ visibility: 'hidden' }}>
               <div className="p-home-page-cards-wrapper">
                 {/* <div className="p-home-page-card-image" aria-hidden="true"><img src={DataEngineerng} alt="" /></div> */}
                 <img className="p-home-page-card-image" src={DataEngineerng} alt="" />
                 <h3 className="p-home-page-card-title">WordPress Website Development </h3>
-                <p className="p-home-page-card-description">
+                <div className="p-home-page-card-description">
                   <ul>
                     <li>
                       <strong>Projects Delivered:</strong>  Successfully developed and deployed WordPress sites for StoryEQ, Todac360,
@@ -180,14 +185,14 @@ const Projects = () => {
                       and high-performing websites.
                     </li>
                   </ul>
-                </p>
+                </div>
                 <div className="p-home-page-card-learn-more">Learn more</div>
               </div>
             </div>
           </Col>
         </Row>
       </div>
-    </div>
+    </>
   );
 };
 

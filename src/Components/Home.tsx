@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Balaji from "../assets/balaji_image_3.jpeg";
 import config from "../config/config";
 import Projects from "./Projects";
+import Skill from "./Skills";
 
 
 const Home = () => {
@@ -87,9 +88,9 @@ const Home = () => {
                     impact. Always learning, always coding!
                 </div>
             </div>
-            <div>
-                <div className="p-home-page-story-header-container p-home-page-projects-header-container">
-                    Projects Handled
+            <div style={{ width: "100%" }}>
+                <div style={{ width: "100%" }}>
+                    <Skill />
                 </div>
             </div>
             <div>

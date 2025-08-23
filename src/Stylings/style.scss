@@ -32,8 +32,8 @@ body{
 // App Main Page Start
 
 .p-default-layout-container{
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
     background-color: #fff7f3;
     overflow-y: auto;
 }
@@ -340,3 +340,46 @@ body{
   font-size: 12px;
   line-height: 1.7;
 }
+
+// Skills Start
+
+.p-home-page-projects-header-container-skills{
+  width: 100%;
+}
+
+.p-home-page-project-skills-content{
+  width: 100%;
+  text-align: center;
+}
+
+.p-home-page-projects-col > ul > li{
+  list-style-type: none;
+}
+
+.p-home-page-projects-col{
+  display: grid;
+  justify-content: center;
+}
+
+.p-home-page-projects-col-skills{
+  min-width: 16em;
+}
+
+.p-home-page-projects-col-skills > tr {
+  margin: 0.5em 0;
+}
+
+.ag-grid-div-container{
+  margin-bottom: 3em;
+}
+
+.skills-table-header{
+  background-color: #2B3153;
+  color: #eee7cf;
+}
+
+.ag-header{
+  font-size: 35px;
+}
+
+// Skills Finish

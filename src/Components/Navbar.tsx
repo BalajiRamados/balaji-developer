@@ -13,7 +13,6 @@ const Navbar = () => {
         <Row>
           <Col>
             <div className="p-navbar-logo p-navbar-links-container">
-              <img src="" alt="" />
               <Link className="p-navlink" to="/">Me</Link>
             </div>
           </Col>
