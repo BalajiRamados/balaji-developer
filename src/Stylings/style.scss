@@ -427,3 +427,64 @@ body{
 }
 
 // Skills Finish
+
+.p-home-page-name-mobile-section{
+  display: none;
+}
+
+.p-home-page-name-mobile-section-invert{
+  display: block;
+}
+
+.ag-grid-mobile-version{
+  display: none;
+}
+
+.ag-grid-desktop-version{
+  display: block;
+}
+
+.p-home-page-cards-container-hidden{
+  visibility: hidden;
+}
+
+// Mobile Version
+
+@media screen and (max-width: 768px) {
+  .p-home-page-name-mobile-section{
+    display: block;
+  }
+  .p-home-page-typewritter-container-static-text{
+    text-align: center;
+    font-size: 50px;
+  }
+  .p-home-page-typewritter-container{
+    font-size: 20px;
+  }
+  .p-home-page-name-mobile-section-invert{
+    display: none;
+  }
+  .p-home-page-story-container{
+    max-width: 100vw;
+    text-wrap: auto;
+    font-size: 16px;
+  }
+  .p-home-page-story-header-container{
+    font-size: 30px;
+  }
+  .ag-header{
+    font-size: 20px;
+  }
+  .ag-grid-mobile-version{
+    display: block;
+  }
+  .ag-grid-desktop-version{
+    display: none;
+  }
+  .p-home-page-cards-container-hidden{
+    display: none;
+  }
+  .p-home-page-cards-container-odd{
+    margin-bottom: 3em;
+  }
+}

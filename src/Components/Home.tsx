@@ -52,7 +52,9 @@ const Home = () => {
         <div className="p-home-page-content-container">
             <div>
                 <div className="p-home-page-typewritter-container-static-text">
-                    Hey! I'm Balaji
+                    Hey! &nbsp;
+                    <br className="p-home-page-name-mobile-section" />
+                    I'm Balaji
                 </div>
             </div>
             <div>
@@ -78,13 +80,13 @@ const Home = () => {
             <div>
                 <div className="p-home-page-story-container">
                     I’m Balaji — a Full Stack developer and cloud enthusiast
-                    <br />
+                    <br className="p-home-page-name-mobile-section-invert" />
                     who loves building smart, user-friendly web apps and
-                    <br />
+                    <br className="p-home-page-name-mobile-section-invert" />
                     data solutions. From front-end magic to back-end
-                    <br />
+                    <br className="p-home-page-name-mobile-section-invert" />
                     logic (with a dash of AI), I enjoy turning ideas into real
-                    <br />
+                    <br className="p-home-page-name-mobile-section-invert" />
                     impact. Always learning, always coding!
                 </div>
             </div>

@@ -39,28 +39,62 @@ const SkillAG = () => {
         }
     ]);
 
+    const [ colDefsMobile ] = useState<any>([
+        { 
+            field: "MERN Stack",
+            headerClass: "skills-table-header",
+            tooltipValueGetter: (params: any) => `MERN Stack Technology: ${params.value}`,
+            headerTooltip: "MERN Stack Technologies",
+            maxWidth: 160
+        },
+        { 
+            field: "Data Engineering",
+            headerClass: "skills-table-header",
+            tooltipValueGetter: (params: any) => `Data Engineering Tool: ${params.value}`,
+            headerTooltip: "Data Engineering Tools and Technologies",
+            maxWidth: 210
+        }
+    ]);
+
     const rowStyle = useMemo(() => { 
         return { background: '#eee7cf6e', color: "#2b3153", fontSize: '20px' };
     }, []);
 
     return (
-        <div className="ag-grid-div-container" style={{ height: 773, width: "100%"}}>
-            <AgGridReact
-                rowData={rowData}
-                rowStyle={rowStyle}
-                columnDefs={colDefs}
-                defaultColDef={{    
-                    flex: 1,
-                    minWidth: 100,
-                    sortable: true,
-                }}
-                rowHeight={50}
-                headerHeight={70}
-                // tooltipShowDelay={500}
-                // suppressRowHoverHighlight={suppressRowHoverHighlight}
-                // columnHoverHighlight={columnHoverHighlight}
-            />
-        </div>
+        <>
+            <div className="ag-grid-mobile-version">
+                <div className="ag-grid-div-container" style={{ height: 773, width: 370 }}>
+                    <AgGridReact
+                        rowData={rowData}
+                        rowStyle={{ background: '#eee7cf6e', color: "#2b3153", fontSize: '16px' }}
+                        columnDefs={colDefsMobile}
+                        defaultColDef={{    
+                            flex: 1,
+                            minWidth: 100,
+                            sortable: true,
+                        }}
+                        rowHeight={50}
+                        headerHeight={70}
+                    />
+                </div>
+            </div>
+            <div className="ag-grid-desktop-version">
+                <div className="ag-grid-div-container"  style={{ height: 773, width: '100%' }}>
+                    <AgGridReact
+                        rowData={rowData}
+                        rowStyle={rowStyle}
+                        columnDefs={colDefs}
+                        defaultColDef={{    
+                            flex: 1,
+                            minWidth: 100,
+                            sortable: true,
+                        }}
+                        rowHeight={50}
+                        headerHeight={70}
+                    />
+                </div>
+            </div>
+        </>
     );
 
 };
