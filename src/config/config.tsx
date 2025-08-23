@@ -2,11 +2,13 @@ import React from 'react';
 
 interface Config {
     example: String,
-    routes?: any
+    routes?: any,
+    roles: String[]
 }
 
 const config: Config = {
-    example: "example"
+    example: "example",
+    roles: ['MERN Stack Developer', 'AWS Data Engineer']
 }
 
 config.routes = {

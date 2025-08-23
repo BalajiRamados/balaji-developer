@@ -6,7 +6,7 @@ import { CSpinner } from '@coreui/react'
 
 const AppContent = () => {
     return (
-       <Container id="appContainerCon">
+       <Container id="appContainerCon" className="p-app-main-page-container">
             <Suspense fallback={<CSpinner color="primary" />} />
                 <Routes>
                     {
