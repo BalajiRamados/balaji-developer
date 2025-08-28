@@ -29,13 +29,17 @@ const SkillAG = () => {
             field: "MERN Stack",
             headerClass: "skills-table-header",
             tooltipValueGetter: (params: any) => `MERN Stack Technology: ${params.value}`,
-            headerTooltip: "MERN Stack Technologies"
+            headerTooltip: "MERN Stack Technologies",
+            lockPinned: true,
+            lockPosition: "left"
         },
         { 
             field: "Data Engineering",
             headerClass: "skills-table-header",
             tooltipValueGetter: (params: any) => `Data Engineering Tool: ${params.value}`,
-            headerTooltip: "Data Engineering Tools and Technologies"
+            headerTooltip: "Data Engineering Tools and Technologies",
+            lockPinned: true,
+            lockPosition: "right"
         }
     ]);
 
@@ -45,14 +49,20 @@ const SkillAG = () => {
             headerClass: "skills-table-header",
             tooltipValueGetter: (params: any) => `MERN Stack Technology: ${params.value}`,
             headerTooltip: "MERN Stack Technologies",
-            maxWidth: 160
+            maxWidth: 160,
+            lockPinned: true,
+            lockPosition: "left",
+            suppressSizeToFit: true
         },
         { 
             field: "Data Engineering",
             headerClass: "skills-table-header",
             tooltipValueGetter: (params: any) => `Data Engineering Tool: ${params.value}`,
             headerTooltip: "Data Engineering Tools and Technologies",
-            maxWidth: 210
+            maxWidth: 210,
+            lockPinned: true,
+            lockPosition: "right",
+            suppressSizeToFit: true
         }
     ]);
 
@@ -72,6 +82,7 @@ const SkillAG = () => {
                             flex: 1,
                             minWidth: 100,
                             sortable: true,
+                            lockPinned: true
                         }}
                         rowHeight={50}
                         headerHeight={70}
@@ -88,6 +99,7 @@ const SkillAG = () => {
                             flex: 1,
                             minWidth: 100,
                             sortable: true,
+                            lockPinned: true
                         }}
                         rowHeight={50}
                         headerHeight={70}
